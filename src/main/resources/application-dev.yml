@@ -1,4 +1,7 @@
 eureka:
+  instance:
+    preferIpAddress: true
+    hostname: eureka-0
   client:
     service-url:
       defaultZone: http://eureka-0.eureka-service.default.svc.cluster.local:8761/eureka
@@ -6,7 +9,7 @@ eureka:
 spring:
   data:
     mongodb:
-      uri: mongodb+srv://admin:codedecode@atlas-cluster.mqdj7js.mongodb.net/?retryWrites=true&w=majority # mongodb://localhost:27017/orderdb
+      uri: mongodb+srv://admin:admin123@atlascluster.mkmed0f.mongodb.net/
       host: atlas-cluster.mqdj7js.mongodb.net
       port: 27017
       database: orderdb
